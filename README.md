@@ -1,5 +1,42 @@
  ![image](https://bootcamp.rhinops.io/images/terraform-logo.png)
 
+
+## Terraform Installing
+
+We have to use a terraform platform and let's get practice first with a simple hands on manual
+
+https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started
+
+https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure
+
+# Instructions
+
+#### first you will need to install "Terraform" and connect it to your azure account.
+
+
+## Terraform Installation
+
+We have to use a terraform platform and let's get practice first with a simple hands on manual
+
+https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/azure-get-started
+
+https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure
+
+## Setting things up
+
+1) After cloning this repository you will need to set up all the needed variables mantion bellow in the documentation under "Requierments".
+
+2) You will need to run "terraform init" to make sure you have versions and providers in line with the one on the project
+
+```python
+terraform init
+```
+3) After that you can use "terraform plan" / "terraform apply"
+
+```python
+terraform apply
+```
+
 ## Requirements
 
 | Name | Version |
