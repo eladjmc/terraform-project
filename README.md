@@ -108,3 +108,4 @@ terraform apply
 | Name | Description |
 |------|-------------|
 | <a name="output_vmss_password"></a> [vmss\_password](#output\_vmss\_password) | taking vmss password output from vmss module and making it root output so it can be viewed |
+
