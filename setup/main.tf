@@ -33,9 +33,9 @@ module "weight_app_vmss" {
 # Loocking the tfstate in order to upload it
 terraform {
   backend "azurerm" {
-    resource_group_name  = "terraform-rg"
-    storage_account_name = "eladjmcblobaccount"
-    container_name       = "content"
+    resource_group_name  = "tfstate-blob"
+    storage_account_name = "eladtfstateblob12785"
+    container_name       = "container"
     key                  = "terraform.tfstate"
   }
 }
@@ -43,8 +43,6 @@ terraform {
 # Creating blob and uploading my tfstate
 module "store_to_blob" {
   source                  = "../modules/blob_create_update_module"
-  resource_group_name     = azurerm_resource_group.terraform_rg.name
-  resource_group_location = azurerm_resource_group.terraform_rg.location
 }
 
 
